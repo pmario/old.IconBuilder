@@ -1,0 +1,11 @@
+<div title="IconConfigList" modifier="pmario" created="20100728232051" modified="20100729124527" tags="excludeLists" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com/" server.etag="&quot;iconbuilder_public/IconConfigList/50146;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="24a47020891f1397ef03c7da23d4fbec71c74059" revision.text="" server.page.revision="50146" server.title="IconConfigList" server.content-type="" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
+<pre>set.ToggleBg
+set.ToggleFg
+set.Toolbar
+set.Mac
+set.cssIcons
+set.testIcons
+set.fakeIcons
+set.fxIcons
+set.myIcons</pre>
+</div>

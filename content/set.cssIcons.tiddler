@@ -1,0 +1,481 @@
+<div title="set.cssIcons" modifier="pmario" created="20100728230634" modified="20101124134228" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com/" server.etag="&quot;iconbuilder_public/set.cssIcons/228328;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="a8b908b396486a5f49365d1e21bc728b035e9ba3" revision.text=".svg removed from name" server.page.revision="228328" server.title="set.cssIcons" server.content-type="text/plain" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
+<pre>[[ {	"icon" : "editTiddler",
+	"elems" : ["bBgCssGn.svg", "bFgCss.svg", "sEditDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "closeTiddler",
+	"elems" : ["bBgCssRd.svg", "bFgCss.svg", "sCloseTiddlerDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "saveTiddler",
+	"elems" : ["bBgCssGn.svg", "bFgCss.svg", "sSaveTiddlerDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "cancelTiddler",
+	"elems" : ["bBgCssBl.svg", "bFgCss.svg", "sCancelDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "deleteTiddler",
+	"elems" : ["bBgCssRd.svg", "bFgCss.svg", "sDeleteDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "moreCommand",
+	"elems" : ["bBgCssBa.svg", "bFgCss.svg", "sMoreDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+
+[[ {	"icon" : "savePublicTiddler",
+	"elems" : ["bBgCssGn.svg", "bFgCss.svg", "sSavePublicDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+
+
+[[ {	"icon" : "fields",
+	"elems" : ["bBgCssBa.svg", "bFgCss.svg", "sFieldsDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "publishTiddlerRevision",
+	"elems" : ["bBgCssGn.svg", "bFgCss.svg", "sSavePublicDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "pubRev",
+	"elems" : ["bBgCssBa.svg", "bFgCss.svg", "sPublicDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "revisions",
+	"elems" : ["bBgCssBa.svg", "bFgCss.svg", "sRevisionsDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "syncing",
+	"elems" : ["bBgCssBa", "bFgCss.svg", "sSyncingDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "permalink",
+	"elems" : ["bBgCssBa.svg", "bFgCss.svg", "sPermalinkDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+
+[[ {	"icon" : "references",
+	"elems" : ["bBgCssBa.svg", "bFgCss.svg", "sBacklinkDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "closeOthers",
+	"elems" : ["bBgCssRd.svg", "bFgCss.svg", "sCloseOthersDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "jump",
+	"elems" : ["bBgCssBa.svg", "bFgCss.svg", "sJumpDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "cloneTiddler",
+	"elems" : ["bBgCssBl.svg", "bFgCss.svg", "sCopyDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "class", 	"x" : "ooh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					{"f" : "class",     "x" : "gly" },
+					]
+		},
+	]
+} ]]</pre>
+</div>

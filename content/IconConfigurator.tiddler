@@ -1,0 +1,104 @@
+<div title="IconConfigurator" modifier="pmario" created="20100728230628" modified="20100829081836" s-order="2" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com/" server.etag="&quot;iconbuilder_public/IconConfigurator/83069;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="18b4c43b135720e4fe9399fbce13ce93207bb8d6" revision.text="configCustomFields set outside create" server.page.revision="83069" server.title="IconConfigurator" server.content-type="" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
+<pre>!Description
+*Select your icon elements and write them to a set.* tiddler. It can be any name. 
+*All items will be appended to the tiddler.
+*Editing/deleting needs to be done by hand :)
+*For CSS only configuration template a background with 'css' has to be used. Otherwise it will not work
+*The icons seen on my page use bBgTrans .. _b_asic _B_ack_g_round _Trans_parent.
+
+!Action
+Configuration File: <<select =txtIconConfig +IconConfigList allowEdit rows:1>> Configuration Template <<select =txtConfigTemplate 'cssOnlyConf' 'toolbarConf' 'fullConf' rows:1>> <br>
+{{dp33{Background: 
+<<select =txtSvgBg rows:10 "=iconBgPart" >> <<image {{config.options.txtSvgBg}} 100 100 >> }}}{{dp33{Foreground:
+<<select =txtSvgFg rows:10 "=iconFgPart" >> <<image {{config.options.txtSvgFg}} 100 100 >> }}}{{dp33{Symbol:
+<<select =txtSvgSymbol rows:10 "=iconPart" >> {{gray{<<image {{config.options.txtSvgSymbol}} 100 100 >> }}} <<image {{config.options.txtSvgSymbol}} 100 100 >> 
+}}}
+
+<<tiddler RefreshTiddler with: 'show icon parts'>><br>
+
+Click <script label="Write configuration to above configuration file!">
+(function($) {
+
+var getConfigTxt = function(newName, bg, fg, sym) {
+
+var template = '\n[[ {	"icon" : "%0",\n' +
+'	"elems" : ["%1", "%2", "%3"],\n' +
+'	"parts" : [\n' +
+'		{ "svg" : "svg2" , "fx" : [\n' +
+'					{"f" : "onclick", 	"x" : "rd"},\n' +
+'					{"f" : "onmousedown", 	"x" : "sm"},\n' +
+'					{"f" : "onmouseup", 	"x" : "re"},\n' +
+'					]\n' +
+'		},\n' +
+'		{ "svg" : "overlay", "fx" : [\n' +
+'					{"f" : "onmouseover", 	"x" : "tbg"},\n' +
+'					{"f" : "onmouseout", 	"x" : "tbg"},\n' +
+'					]\n' +
+'		},\n' +
+'		{ "svg" : "icon", "fx" : [\n' +
+'					]\n' +
+'		},\n' +
+'		{ "svg" : "iconFG",	"fx" : [\n' +
+'					{"f" : "class", 	"x" : "soh" },\n' +
+'					{"f" : "opacity", 	"x" : "o00" },\n' +
+'					]\n' +
+'		},\n' +
+'		{ "svg" : "iconBG",	"fx" : [\n' +
+'					]\n' +
+'		},\n' +
+'		{ "svg" : "iconSymbol","fx" : [\n' +
+'					]\n' +
+'		},\n' +
+'	]\n' +
+'} ]]\n';
+
+if (store.tiddlerExists(co.txtConfigTemplate)) {
+	template = '\n' + store.getTiddlerText(co.txtConfigTemplate) + '\n';
+}
+else {
+	// use default do nothing
+	displayMessage( co.txtConfigTemplate + ' not found, default configuration is used!')
+}
+
+	return template.format([newName, bg, fg, sym]);
+}
+
+var co = config.options;
+
+var svgBg = (co.txtSvgBg )? co.txtSvgBg : "";
+var svgFg = (co.txtSvgFg )? co.txtSvgFg : "";
+var svgSymbol = (co.txtSvgSymbol )? co.txtSvgSymbol : "";
+
+if (svgBg == "") return alert("No bacground tiddler selected!");
+if (svgFg == "") return alert("No foreground tiddler selected!");
+if (svgSymbol == "") return alert("No symbol tiddler selected!");
+
+var newIconName = prompt('New icon name','newIcon.svg') || 'newIcon.svg';
+
+var svgName = (co.txtIconConfig) ? co.txtIconConfig : 'testIcons' ;
+
+var tid = store.getTiddler(svgName);
+	if(!tid) {
+		tid = new Tiddler(svgName);
+		tid.modifier ='iconbuilder.tiddlyspace.com';
+	}
+	tid.fields = merge({}, config.defaultCustomFields);
+	tid.fields['server.content-type'] = 'text/plain';
+	tid.modifier ='IconConfigurator';
+	tid.tags = [];	
+	var configTxt = getConfigTxt(newIconName, co.txtSvgBg, co.txtSvgFg, co.txtSvgSymbol);
+
+	tid.text +=  configTxt;
+
+	// 
+	store.saveTiddler(tid.title, tid.title, tid.text, tid.modifier, tid.modified, tid.tags, tid.fields, false, tid.created, '');
+	autoSaveChanges(null, [tid]);
+
+	var here=story.findContainingTiddler(place);
+	if (here) story.refreshTiddler(here.getAttribute('tiddler'),null,true);
+	return false;
+
+})(jQuery);
+
+</script></pre>
+</div>

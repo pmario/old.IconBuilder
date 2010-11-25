@@ -1,0 +1,157 @@
+<div title="set.ToggleFgJs" modifier="pmario" created="20100728230634" modified="201011241539" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com/" server.etag="&quot;iconbuilder_public/set.ToggleFgJs/229586;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="29898ce879a8942095a3e6f6d4ab4c12b3a2b334" revision.text="" server.page.revision="229586" server.title="set.ToggleFgJs" server.content-type="text/plain" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
+<pre>[[ {	"icon" : "tfgCloseAll.svg",
+	"elems" : ["bBgTrans.svg", "bFgRdLight.svg", "sCloseAllDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					{"f" : "onclick", 	"x" : "ca"},
+					{"f" : "onmousedown", 	"x" : "sm"},
+					{"f" : "onmouseup", 	"x" : "re"},
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "onmouseover", 	"x" : "tbg"},
+					{"f" : "onmouseout", 	"x" : "tbg"},
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "class", 	"x" : "soh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "tfgPermaview.svg",
+	"elems" : ["bBgTrans.svg", "bFgBrLight.svg", "sPermaviewDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					{"f" : "onclick", 	"x" : "pv"},
+					{"f" : "onmousedown", 	"x" : "sm"},
+					{"f" : "onmouseup", 	"x" : "re"},
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "onmouseover", 	"x" : "tbg"},
+					{"f" : "onmouseout", 	"x" : "tbg"},
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "class", 	"x" : "soh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "tfgNewTiddler.svg",
+	"elems" : ["bBgTrans.svg", "bFgGnLight.svg", "sNewTiddlerDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					{"f" : "onclick", 	"x" : "nt"},
+					{"f" : "onmousedown", 	"x" : "sm"},
+					{"f" : "onmouseup", 	"x" : "re"},
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "onmouseover", 	"x" : "tbg"},
+					{"f" : "onmouseout", 	"x" : "tbg"},
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "class", 	"x" : "soh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "tfgNewJournal.svg",
+	"elems" : ["bBgTrans.svg", "bFgGnLight.svg", "sNewJournalDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					{"f" : "onclick", 	"x" : "nj"},
+					{"f" : "onmousedown", 	"x" : "sm"},
+					{"f" : "onmouseup", 	"x" : "re"},
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "onmouseover", 	"x" : "tbg"},
+					{"f" : "onmouseout", 	"x" : "tbg"},
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "class", 	"x" : "soh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					]
+		},
+	]
+} ]]
+
+[[ {	"icon" : "tfgSaveToWeb.svg",
+	"elems" : ["bBgTrans.svg", "bFgGnLight.svg", "sSaveToWebDark.svg"],
+	"parts" : [
+		{ "svg" : "svg2" , "fx" : [
+					{"f" : "onclick", 	"x" : "sc"},
+					{"f" : "onmousedown", 	"x" : "sm"},
+					{"f" : "onmouseup", 	"x" : "re"},
+					]
+		},
+		{ "svg" : "overlay", "fx" : [
+					{"f" : "onmouseover", 	"x" : "tbg"},
+					{"f" : "onmouseout", 	"x" : "tbg"},
+					]
+		},
+		{ "svg" : "icon", "fx" : [
+					]
+		},
+		{ "svg" : "iconFG",	"fx" : [
+					{"f" : "class", 	"x" : "soh" },
+					{"f" : "opacity", 	"x" : "o00" },
+					]
+		},
+		{ "svg" : "iconBG",	"fx" : [
+					]
+		},
+		{ "svg" : "iconSymbol","fx" : [
+					]
+		},
+	]
+} ]]
+</pre>
+</div>
