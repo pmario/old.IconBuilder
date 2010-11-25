@@ -36,6 +36,7 @@ tiddler: sidebarSearch.tiddler
 tiddler: tbgSaveToWeb.svg.tiddler
 tiddler: cloneTiddler.svg.tiddler
 tiddler: bFgRd.svg.tiddler
+tiddler: UsedLicense.tiddler
 tiddler: tfgSaveToWeb.svg.tiddler
 tiddler: EmasticSystem.tiddler
 tiddler: bFgBl.svg.tiddler
@@ -148,7 +149,6 @@ tiddler: css_savePublicTiddler.svg.tiddler
 tiddler: syncing.tiddler
 tiddler: StyleSheetMediaPrint.tiddler
 tiddler: bFgRdLight.svg.tiddler
-tiddler: BSDLicense.tiddler
 tiddler: tfgCloseAll.svg.tiddler
 tiddler: sDownload.svg.tiddler
 tiddler: sToggleLeft.svg.tiddler
@@ -167,7 +167,6 @@ tiddler: sSaveToCloud.svg.tiddler
 tiddler: sMoreCommand.svg.tiddler
 tiddler: emastic.tiddler
 tiddler: set.Mac.tiddler
-tiddler: test_editTiddler.tiddler
 tiddler: sAlien.svg.tiddler
 tiddler: SidebarTools.tiddler
 tiddler: css_saveTiddler.tiddler
