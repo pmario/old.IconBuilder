@@ -1,8 +1,9 @@
-<div title="sPlus.svg" modifier="pmario" created="20100729080506" modified="201008191921" tags="iconPart" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com/" server.etag="&quot;iconbuilder_public/sPlus.svg/74456;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="f260639c3d46fc123775b2ff095d09eecde3a025" revision.text="" server.page.revision="74456" server.title="sPlus.svg" server.content-type="" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
+<div title="sPlus.svg" modifier="pmario" created="20100729080506" modified="20101127203936" tags="iconPartX" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com/" server.etag="&quot;iconbuilder_public/sPlus.svg/234420;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="86190e7e324b03b3b230edef50561030dfc119a7" revision.text="" server.page.revision="234420" server.title="sPlus.svg" server.content-type="text/plain" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
 <pre><?xml version="1.0" encoding="UTF-8" standalone="no"?>
- <g id="iconSymbol" stroke-linejoin="miter" fill-rule="evenodd" transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-56.346449,56.287273)" stroke="#e6e6e6" stroke-linecap="round" stroke-miterlimit="4" fill="#e6e6e6">
-  <path id="path3221" style="stroke-dasharray:none;" d="M63.19,65.199,53.712,55.721" stroke-width="2.6224"/>
-  <path id="path2885" style="stroke-dasharray:none;" d="m53.712,65.199,9.4781-9.4781" stroke-width="2.62276983"/>
+<svg id="svg2" xmlns="http://www.w3.org/2000/svg" height="29pt" width="29pt" version="1.0" viewBox="13 43 29 29"> 
+ <g id="iconSymbol"  stroke="#4d4d4d" transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-56.346449,56.287273)" stroke-linecap="round" fill="none">
+  <path d="M63.19,65.199,53.712,55.721" stroke-width="2.6224"/>
+  <path d="m53.712,65.199,9.4781-9.4781" stroke-width="2.62276983"/>
  </g>
 </svg></pre>
 </div>
