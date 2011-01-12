@@ -4,4 +4,4 @@ Iconbuilder is my attampt, to make batch creation of svg icons for tiddlyspace e
 
 ===
 This repo is used to backup the existing content.
-I want to globally change the internal structure used for the svg icons. 
+I want to globally change the internal structure used for the svg icons.
