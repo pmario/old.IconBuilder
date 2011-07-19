@@ -1,30 +1,22 @@
-<div title="set.testIcons" modifier="pmario" created="20100728230634" modified="201011251712" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com/" server.etag="&quot;iconbuilder_public/set.testIcons/232495;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="24b1155811b8a2eb9c46ca2556bfa48048ffeb62" revision.text="" server.page.revision="232495" server.title="set.testIcons" server.content-type="text/plain" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
-<pre>[[ {	"icon" : "editTiddler",
-	"elems" : ["bBgTrans.svg", "bFgGnLight.svg", "sEditDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					{"f" : "class", 	"x" : "sOVoh" },
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "sFGoh" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					{"f" : "class", 	"x" : "sBGoh" },
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class", 	"x" : "sSYoh" },
-					]
-		},
-	]
+<div title="set.testIcons" modifier="pmario" created="20100728230634" modified="20101219152101" tags="set" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com" server.etag="&quot;iconbuilder_public/set.testIcons/71770;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="9a50c274641815cfc941e3737aab093ec6deb199" revision.text="" server.page.revision="71770" server.title="set.testIcons" server.content-type="text/plain" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
+<pre>[[ {	"default": true,	// If set to true, "elems" and "parts" are used as default values. 
+				// If you want new default values, mark an other element as default
+	"tags"	: ["icon"],	// ["icon"] .. css animated; ["icon", "iconFx"] .. js animated + js functions
+	"icon"  : "editTiddler",
+	"elems" : { "bg": "bBgTrans.svg", "fg": "bFgGnLight.svg", "sy": "sEdit.svg" },
+	"parts" : {
+		"svg2"       : { "class" : "soa"},
+		"overlay"    : { "class" : "sOV"},
+		"icon"       : {},
+		"iconFG"     : { "class" : "sFG"},
+		"iconBG"     : { "class" : "sBG"},
+		"iconSymbol" : { "class" : "sSY"},
+		} // "parts"
 } ]]
+
+[[ {	"icon"  : "moreCommand",
+	"elems" : { "bg": "bBgTri.svg", "fg": "bFgTri.svg", "sy": "sTriMore.svg" },
+} ]]
+
 </pre>
 </div>

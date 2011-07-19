@@ -1,4 +1,4 @@
-<div title="SingleIconBuilder" modifier="pmario" created="20100728230629" modified="20100917190545" s-order="4" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com/" server.etag="&quot;iconbuilder_public/SingleIconBuilder/105120;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="27c1af4e9dcce6edfc204d14f68f17fc18120baf" revision.text="" server.page.revision="105120" server.title="SingleIconBuilder" server.content-type="" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
+<div title="SingleIconBuilder" modifier="pmario" created="20100728230629" modified="20101202161729" s-order="4" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com" server.etag="&quot;iconbuilder_public/SingleIconBuilder/70510;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="b3cbeb496aaa0f808772505252eb5accd9ca7a8f" revision.text="iconPartX" server.page.revision="70510" server.title="SingleIconBuilder" server.content-type="" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
 <pre>!Usage
 *Select the needed elements and press the generate button.
 *No javascript is added to the icon
@@ -10,7 +10,7 @@
 {{dp33{Background: 
 <<select =txtSvgBg rows:10 "=iconBgPart" >> <<image {{config.options.txtSvgBg}} 100 100 >> }}}{{dp33{Foreground:
 <<select =txtSvgFg rows:10 "=iconFgPart" >> <<image {{config.options.txtSvgFg}} 100 100 >> }}}{{dp33{Symbol:
-<<select =txtSvgSymbol rows:10 "=iconPart" >> {{gray{<<image {{config.options.txtSvgSymbol}} 100 100 >> }}} <<image {{config.options.txtSvgSymbol}} 100 100 >>
+<<select =txtSvgSymbol rows:10 "=iconPartX" >> {{gray{<<image {{config.options.txtSvgSymbol}} 100 100 >> }}} <<image {{config.options.txtSvgSymbol}} 100 100 >>
 }}} 
 
 <<image builderTest.svg 100 100>>

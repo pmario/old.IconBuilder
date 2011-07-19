@@ -1,10 +1,10 @@
-<div title="myFunctions" modifier="pmario" created="20100728232433" modified="20101125170244" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com/" server.etag="&quot;iconbuilder_public/myFunctions/232391;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="b433057b121c90985089d0658f19cbf403a9f909" revision.text="" server.page.revision="232391" server.title="myFunctions" server.content-type="text/plain" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
+<div title="myFunctions" modifier="pmario" created="20100728232433" modified="20101202163447" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com" server.etag="&quot;iconbuilder_public/myFunctions/71076;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="193e78a085964c258fef22baf747d8bc5889b295" revision.text="" server.page.revision="71076" server.title="myFunctions" server.content-type="text/plain" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
 <pre>[[ { 
 "class"   : {
-		"sFGoh" : "showFGonHover",
-		"sBGoh" : "showBGonHover",
-		"sOVoh" : "showOVonHover",
-		"sSYoh" : "showSYonHover",
+		"sFG" : "showFG",
+		"sBG" : "showBG",
+		"sOV" : "showOV",
+		"sSY" : "showSY",
 
 		"soh" : "showOnHover",
 		"ooh" : "overlayOnHover",

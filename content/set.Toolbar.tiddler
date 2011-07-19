@@ -1,517 +1,101 @@
-<div title="set.Toolbar" modifier="pmario" created="20100728232057" modified="20101124152849" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com/" server.etag="&quot;iconbuilder_public/set.Toolbar/229549;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="423b681ca05488642573571a1569f90c42363cb9" server.page.revision="229549" server.title="set.Toolbar" server.content-type="text/plain" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
-<pre>[[ {	"icon" : "editTiddler",
-	"elems" : ["bBgTrans.svg", "bFgGnLight.svg", "sEditDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
+<div title="set.Toolbar" modifier="pmario" created="20100728232057" modified="20101205172725" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com" server.etag="&quot;iconbuilder_public/set.Toolbar/71619;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="382224e5864789503d051c2c99841866a05877ca" revision.text="" server.page.revision="71619" server.title="set.Toolbar" server.content-type="text/plain" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
+<pre>[[ {	"default": true,	// If set to true, "elems" and "parts" are used as default values. 
+				// If you want new default values, mark an other element as default
+	"icon"  : "editTiddler",
+	"elems" : { "bg": "bBgTrans.svg", "fg": "bFgGnLight.svg", "sy": "sEdit.svg" },
+	"parts" : {
+		"svg2"       : { "class" : "soa"},
+		"overlay"    : { "class" : "sOV"},
+		"icon"       : {},
+		"iconFG"     : { "class" : "sFG"},
+		"iconBG"     : { "class" : "sBG"},
+		"iconSymbol" : { "class" : "sSY"},
+		} // "parts"
 } ]]
 
-
-[[ {    "icon" : "editTiddlerReadOnly",
-    "elems" : ["bBgTrans.svg", "bFgGnLight.svg", "sViewDark.svg"],
-    "parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
-} ]]
-
-[[ {	"icon" : "closeTiddler",
-	"elems" : ["bBgTrans.svg", "bFgRdLight.svg", "sCloseTiddlerDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
-} ]]
-
-[[ {	"icon" : "cancelTiddler",
-	"elems" : ["bBgTrans.svg", "bFgBlLight.svg", "sCancelDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
+[[ {	"icon" : "saveDraft",
+	"elems" : { /** bg **/ "fg": "bFgGnLight.svg", "sy":"sSaveDraft.svg"}, 
 } ]]
 
 [[ {	"icon" : "savePublicTiddler",
-	"elems" : ["bBgTrans.svg", "bFgGnLight.svg", "sSavePublicDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
+	"elems" : { /** bg **/ "fg": "bFgGnLight.svg", "sy":"sSavePublic.svg"}, 
 } ]]
 
 [[ {	"icon" : "saveTiddler",
-	"elems" : ["bBgTrans.svg", "bFgGnLight.svg", "sSaveTiddlerDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
-} ]]
-
-[[ {	"icon" : "deleteTiddler",
-	"elems" : ["bBgTrans.svg", "bFgRdLight.svg", "sDeleteDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
-} ]]
-
-[[ {	"icon" : "moreCommand",
-	"elems" : ["bBgTri.svg", "bFgTri.svg", "sTriMoreDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
-} ]]
-
-[[ {	"icon" : "fields",
-	"elems" : ["bBgTrans.svg", "bFgBrLight.svg", "sFieldsDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
+	"elems" : { /** bg **/ "fg": "bFgGnLight.svg", "sy":"sSaveTiddler.svg"}, 
 } ]]
 
 [[ {	"icon" : "publishTiddlerRevision",
-	"elems" : ["bBgTrans.svg", "bFgGnLight.svg", "sSavePublicDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
+	"elems" : { /** bg **/ "fg": "bFgGnLight.svg", "sy":"sSavePublic.svg"}, 
 } ]]
 
-[[ {	"icon" : "pubRev",
-	"elems" : ["bBgTrans.svg", "bFgBrLight.svg", "sPublicDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
+[[ {	"icon"  : "closeTiddler",
+	"elems" : { /** bg **/ "fg": "bFgRdLight.svg", "sy": "sCloseTiddler.svg" },
 } ]]
 
-[[ {	"icon" : "revisions",
-	"elems" : ["bBgTrans.svg", "bFgBrLight.svg", "sRevisionsDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
+[[ {	"icon"  : "closeOthers",
+	"elems" : { /** bg **/ "fg": "bFgRdLight.svg", "sy": "sCloseOthers.svg" },
 } ]]
 
-[[ {	"icon" : "syncing",
-	"elems" : ["bBgTrans.svg", "bFgBrLight.svg", "sSyncingDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
+[[ {	"icon"  : "deleteTiddler",
+	"elems" : { /** bg **/ "fg": "bFgRdLight.svg", "sy": "sDelete.svg" },
 } ]]
 
-[[ {	"icon" : "permalink",
-	"elems" : ["bBgTrans.svg", "bFgBrLight.svg", "sPermalinkDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
+[[ {	"icon"  : "revert",
+	"elems" : { /** bg **/ "fg": "bFgRdLight.svg", "sy": "sSpiral.svg" },
 } ]]
 
-
-[[ {	"icon" : "references",
-	"elems" : ["bBgTrans.svg", "bFgBrLight.svg", "sBacklinkDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
+[[ {	"icon" : "editTiddlerReadOnly",
+	"elems" : { /** bg **/ "fg": "bFgBlLight.svg", "sy":"sView.svg"}, 
 } ]]
 
-[[ {	"icon" : "closeOthers",
-	"elems" : ["bBgTrans.svg", "bFgRdLight.svg", "sCloseOthersDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
+[[ {	"icon"  : "cancelTiddler",
+	"elems" : { /** bg **/ "fg": "bFgBlLight.svg", "sy": "sCancel.svg" },
 } ]]
 
-[[ {	"icon" : "jump",
-	"elems" : ["bBgTrans.svg", "bFgBrLight.svg", "sJumpDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
+[[ {	"icon"  : "cloneTiddler",
+	"elems" : { /** bg **/ "fg": "bFgBlLight.svg", "sy": "sCopy.svg" },
 } ]]
 
-[[ {	"icon" : "cloneTiddler",
-	"elems" : ["bBgTrans.svg", "bFgBlLight.svg", "sCopyDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
+[[ {	"icon" : "changeToPublic",
+	"elems" : { /** bg **/ "fg":"bFgBlLight.svg", "sy":"sSavePublic.svg"}, 
 } ]]
 
-[[ {	"icon" : "revert",
-	"elems" : ["bBgTrans.svg", "bFgRdLight.svg", "sSpiralDark.svg"],
-	"parts" : [
-		{ "svg" : "svg2" , "fx" : [
-					]
-		},
-		{ "svg" : "overlay", "fx" : [
-					]
-		},
-		{ "svg" : "icon", "fx" : [
-					]
-		},
-		{ "svg" : "iconFG",	"fx" : [
-					{"f" : "class", 	"x" : "soh" },
-					{"f" : "opacity", 	"x" : "o00" },
-					]
-		},
-		{ "svg" : "iconBG",	"fx" : [
-					]
-		},
-		{ "svg" : "iconSymbol","fx" : [
-					{"f" : "class",     "x" : "gly" },
-					]
-		},
-	]
+[[ {	"icon"  : "fields",
+	"elems" : { /** bg **/ "fg": "bFgBrLight.svg", "sy": "sFields.svg" },
 } ]]
+
+[[ {	"icon"  : "pubRev",
+	"elems" : { /** bg **/ "fg": "bFgBrLight.svg", "sy": "sPublic.svg" },
+} ]]
+
+[[ {	"icon"  : "revisions",
+	"elems" : { /** bg **/ "fg": "bFgBrLight.svg", "sy": "sRevisions.svg" },
+} ]]
+
+[[ {	"icon"  : "syncing",
+	"elems" : { /** bg **/ "fg": "bFgBrLight.svg", "sy": "sSyncing.svg" },
+} ]]
+
+[[ {	"icon"  : "permalink",
+	"elems" : { /** bg **/ "fg": "bFgBrLight.svg", "sy": "sPermalink.svg" },
+} ]]
+
+[[ {	"icon"  : "references",
+	"elems" : { /** bg **/ "fg": "bFgBrLight.svg", "sy": "sBacklink.svg" },
+} ]]
+
+[[ {	"icon"  : "jump",
+	"elems" : { /** bg **/ "fg": "bFgBrLight.svg", "sy": "sJump.svg" },
+} ]]
+
+[[ {	"icon" : "changeToPrivate",
+	"elems" : { /** bg **/ "fg":"bFgBrLight.svg", "sy":"sInclude.svg"}, 
+} ]]
+
+[[ {	"icon"  : "moreCommand",
+	"elems" : { "bg": "bBgTri.svg", "fg": "bFgTri.svg", "sy": "sTriMore.svg" },
+} ]]
+
 </pre>
 </div>

@@ -1,4 +1,4 @@
-<div title="IconBuilder" modifier="pmario" created="20100728230628" modified="201008191921" s-order="50" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com/" server.etag="&quot;iconbuilder_public/IconBuilder/74503;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="d3d9cb3cba21fb11d165c358e7bfd7d2d6e35e30" revision.text="" server.page.revision="74503" server.title="IconBuilder" server.content-type="" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
+<div title="IconBuilder" modifier="pmario" created="20100728230628" modified="20101219151352" s-order="50" server.bag="iconbuilder_public" server.host="http://iconbuilder.tiddlyspace.com" server.etag="&quot;iconbuilder_public/IconBuilder/70393;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="7348d9dae52c29266371d3ec6a144a77feaace06" revision.text="read tags from set.x" server.page.revision="70393" server.title="IconBuilder" server.content-type="" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/iconbuilder_public">
 <pre>!IMPORTANT
 *''If you don't select a "Icon name prefix" the builder may overwrite your personal toolbar icons.''
 **especially valid for [[set.Toolbar.result]]
@@ -19,21 +19,29 @@ var readSVG = function(tidIcons, tidFunctions) {
 	var slices = store.getTiddlerText(tidIcons).readBracketedList();
 	var functions = store.getTiddlerText(tidFunctions).readBracketedList();
 
-	// JSONify the functions
+	// JSONify the functions. acts = actions
 	// IMPORTANT: At the moment only acts[0] can be handled. it is hardcoded below !!!!
 	var acts= [];
 	for (i=0; i<functions.length; i++) {
-		acts[i] = jQuery.parseJSON( functions[i])
+		acts[i] = jQuery.parseJSON( JSON.minify(functions[i]));
 	}
 //	console.log(acts);
 
 	// JSONify the icons
 	//assamble the functions
-	var conf= [];
+	var conf = [];
+	var confX = [];
+	var defaultConf = {};
 	for (i=0; i<slices.length; i++) {
-		conf[i] = jQuery.parseJSON( slices[i])
+		confX[i] = jQuery.parseJSON( JSON.minify(slices[i]));
+		if (confX[i].default === true) {
+			defaultConf = confX[i];
+			delete defaultConf.default;
+		}
+		conf[i] = {};
+		$.extend(true, conf[i], defaultConf, confX[i])
 	}
-//	console.log(conf);
+//	console.log({"conf":conf, "Def":defaultConf, "x": confX});
 
 	return {"conf":conf, "actions":acts}
 }; // readSVG()
@@ -42,9 +50,10 @@ var readSVG = function(tidIcons, tidFunctions) {
 var createSVG = function(conf, actions) {
 
 var name = conf.icon;
-var svgBg = conf.elems[0];
-var svgFg = conf.elems[1];
-var svgSymbol = conf.elems[2]
+var svgBg = conf.elems.bg;
+var svgFg = conf.elems.fg;
+var svgSymbol = conf.elems.sy;
+var tags = conf.tags || [];
 
 if (svgBg == "") return alert("No bacground tiddler selected!");
 if (svgFg == "") return alert("No foreground tiddler selected!");
@@ -55,15 +64,15 @@ var FG = store.getTiddlerText(svgFg );
 var SYMBOL = store.getTiddlerText(svgSymbol);
 
 if (!BG ) {
-	displayMessage('Background tiddler not found')
+	displayMessage(name + ': Background tiddler not found')
 	return false;
 }
 else if ( !FG ) {
-	displayMessage('Foreground tiddler not found')
+	displayMessage(name + ': Foreground tiddler not found')
 	return false;
 }
 else if ( !SYMBOL) {
-	displayMessage('Symbol tiddler not found')
+	displayMessage(name + ': Symbol tiddler not found')
 	return false;
 }
 
@@ -78,7 +87,11 @@ var bg = $(bgObject);
 var fg = $(fgObject);
 var symbol = $(symbolObject);
 
-bg.find('#iconBG').after(symbol.find('#iconSymbol')).after(document.createTextNode('\n ')).after(fg.find('#iconFG')).after(document.createTextNode('\n '));
+bg.find('#iconBG').after(
+	symbol.find('#iconSymbol')).after(
+	document.createTextNode('\n')).after(
+	fg.find('#iconFG')).after(document.createTextNode('\n '));
+
 bg.find('defs').append(fg.find('linearGradient')).append(fg.find('filter'));
 
 //console.log('bg: ',bg);
@@ -86,16 +99,17 @@ bg.find('defs').append(fg.find('linearGradient')).append(fg.find('filter'));
 
 if (conf.parts) {
 	// svg element loop. svg2, icon, iconFG ..
-	for (i=0; i < conf.parts.length; i++) {
+	for (el in conf.parts) {
 
 		// svg action loop: click, mousein, mouseout ...
-		for (k=0; k < conf.parts[i].fx.length; k++) {
+		for (attr in conf.parts[el]) {
 
-			// find the object (i), which should contain a function
+			// find the object (el), which should contain a function
 			// eg: attr('onmousein', value) value comes from actions.
-//console.log('i:', i, 'k: ',k, 'svg: ', conf.parts[i].svg, 'act: ', conf.parts[i].fx[k].f, 'funct: ', actions[0][conf.parts[i].fx[k].f][conf.parts[i].fx[k].x] );
 
-			bg.find('#'+conf.parts[i].svg).attr(conf.parts[i].fx[k].f, actions[0][conf.parts[i].fx[k].f][conf.parts[i].fx[k].x] );
+//console.log('el:',el,'|attr:',attr,'|svg:',conf.parts[el],'|act:',conf.parts[el][attr],'|funct:',actions[0][attr][conf.parts[el][attr]]);
+
+			bg.find('#'+el).attr(attr, actions[0][attr][conf.parts[el][attr]] );
 
 		} // action loop
 	} // for element loop
@@ -115,9 +129,10 @@ var tid = store.getTiddler(svgName);
 
 	tid.fields = merge({}, config.defaultCustomFields);
 	tid.fields['server.content-type'] = co.txtServerContentType || 'text/plain';
-	tid.tags = ['icon', 'iconFx', config.options.txtIconConfig];	
+	tid.tags = tags;
+	tid.tags[tid.tags.length] = config.options.txtIconConfig;	
 	tid.text = text;
-console.log('iconTiddler: ', tid);
+//console.log('iconTiddler: ', tid);
 
 	// 
 	store.saveTiddler(tid.title, tid.title, tid.text, tid.modifier, tid.modified, tid.tags, tid.fields, false, tid.created, tid.creator);

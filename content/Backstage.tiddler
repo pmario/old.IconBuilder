@@ -1,5 +1,20 @@
-<div title="Backstage" modifier="osmosoft" created="20101126135618" tags="excludeLists excludeSearch excludeMissing" server.bag="tiddlyspace" server.host="http://iconbuilder.tiddlyspace.com/" server.etag="&quot;tiddlyspace/Backstage/233490;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="osmosoft" _hash="650fba31f0dee9d10ddef36bf1fed6959fcc0272" server.page.revision="233490" server.title="Backstage" server.content-type="" server.permissions="read" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/tiddlyspace">
-<pre>!User
+<div title="Backstage" modifier="osmosoft" created="20110719144323" tags="excludeLists excludeSearch excludeMissing" server.bag="tiddlyspace" server.host="http://iconbuilder.tiddlyspace.com" server.etag="&quot;tiddlyspace/Backstage/466957;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="osmosoft" _hash="b6ad083e2212cc2964a85891daac144647f3b296" server.page.revision="466957" server.title="Backstage" server.content-type="" server.permissions="read" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/tiddlyspace">
+<pre>!UserUnplugged
+<<TiddlySpaceLogin>>
+
+!SpaceUnplugged
+{{unpluggedSpaceTab{
+{{wizard{
+<<image unsyncedIcon width:48>> <<message messages.syncExplanation>>
+}}}
+{{wizard syncKey{
+{{keyHeading{
+Key}}}
+{{changedServer keyItem{<<message macros.sync.syncStatusList.changedServer.text>>}}} {{changedBoth keyItem{<<message macros.sync.syncStatusList.changedBoth.text>>}}} {{changedLocally keyItem{<<message macros.sync.syncStatusList.changedLocally.text>>}}} {{notFound keyItem{<<message macros.sync.syncStatusList.notFound.text>>}}}
+}}}
+<<sync>>
+
+!User
 {{textRight{
 <<TiddlySpaceLogout>>
 <<tabs txtUserTab
@@ -11,13 +26,23 @@
 
 !Menu
 {{tiddlyspaceMenu{
-<<message messages.memberStatus>>
+<<message messages.memberStatus>> <<homeLink>>
+{{unsyncedList{<<message messages.syncListHeading>> <<list filter [is[unsynced]]>>}}}
 
-<<homeLink>> [[help|@@docs]] [[blog|@@blog]] [[featured|@@featured]]
-
-----
+<<tabs txtTiddlySpaceTab
+search "search across TiddlySpace" Backstage##Search
+help "quick access to useful space resources" Backstage##Resources
+>>
 running TiddlySpace@glossary version <<message extensions.tiddlyweb.status.tiddlyspace_version>>
 }}}
+
+!Resources
+[[blog|@@blog]]
+[[documentation|@@docs]]
+[[featured spaces|@@featured]]
+
+!Search
+<<tsSearch>>
 
 !Space
 <<followSpace>>
@@ -49,11 +74,20 @@ You can associate your account with multiple identities. If you have an open id 
 {{backstageClear{}}}
 
 !Login
-<<TiddlySpaceLogin>>
+<<tabs txtLoginTab 
+"TiddlySpace Username" "Login via a TiddlySpace username and password" Backstage##UserUnplugged
+"OpenID" "Login via an OpenID"  Backstage##TabOpenID
+"Register" "Register a TiddlySpace account" Backstage##TabRegister
+>>
+
+!TabOpenID
+<<TiddlySpaceLogin openid>>
+
+!TabRegister
 <<TiddlySpaceRegister>>
 
 !Options
-upload a private file:
+upload a <<message messages.privacySetting>> file:
 <<binaryUpload>>
 <<search>><<closeAll>><<permaview>><<newTiddler>><<newJournal "DD MMM YYYY" "journal">><<saveChanges>><<slider chkSliderOptionsPanel OptionsPanel "options »" "Change TiddlyWiki advanced options">>
 

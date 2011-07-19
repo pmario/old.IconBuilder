@@ -1,4 +1,4 @@
-<div title="StyleSheetSideBarMp" modifier="pmario" created="20100811113434" modified="20100821093357" tags="excludeLists" server.bag="neui-em_public" server.host="http://iconbuilder.tiddlyspace.com/" server.etag="&quot;neui-em_public/StyleSheetSideBarMp/75295;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="eccd82935e5e57294086d55ce5ff8b75a7a9ac6f" server.page.revision="75295" server.title="StyleSheetSideBarMp" server.content-type="" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/neui-em_public">
+<div title="StyleSheetSideBarMp" modifier="pmario" created="20100811113434" modified="20110318121808" tags="excludeLists" server.bag="neui-em_public" server.host="http://iconbuilder.tiddlyspace.com" server.etag="&quot;neui-em_public/StyleSheetSideBarMp/293250;38557a300c7db6bf205b78f536236444a956e37a&quot;" creator="pmario" _hash="b0211f6b9ed8c0cb2ed8b8fc1e3b15eb1276ba41" server.page.revision="293250" server.title="StyleSheetSideBarMp" server.content-type="" server.permissions="read, write, create, delete" server.recipe="iconbuilder_private" server.type="tiddlyweb" server.workspace="bags/neui-em_public">
 <pre>/*{{{*/
 #sidebar .wizard table {
 	margin: 0px;
@@ -27,9 +27,6 @@
 /*-- new vor FreeStyle --*/
 .tabContents {
 	overflow: auto;
-}
-
-#sidebarTabs {
 }
 
 #sidebarTabs .tabContents{
